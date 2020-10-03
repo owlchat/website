@@ -1,0 +1,26 @@
+{
+  "name": "owlchat-website",
+  "version": "1.0.0",
+  "description": "owlchat website",
+  "main": "none.js",
+  "scripts": {
+    "start": "reload -b",
+    "compile:dev": "postcss public/css/site.css -o public/css/style.min.css",
+    "compile": "cross-env NODE_ENV=production postcss public/css/site.css -o public/css/style.min.css"
+  },
+  "repository": "https://github.com/owlchat/website",
+  "author": "Shady Khalifa <shekohex@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.0",
+    "postcss-cli": "^8.0",
+    "postcss-import": "^12.0.1",
+    "purgecss": "^3.0",
+    "reload": "^3.1.0",
+    "tailwindcss": "^1.8.10"
+  }
+}
