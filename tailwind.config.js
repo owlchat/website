@@ -1,28 +1,28 @@
 module.exports = {
   theme: {
     fontFamily: {
-      display: ['Caveat', 'cursive'],
-      body: ['Montserrat', 'sans-serif'],
+      display: ["Caveat", "cursive"],
+      body: ["Montserrat", "sans-serif"],
     },
     extend: {
       colors: {
-        primary: '#1B262C',
-        secondary: '#393E46',
-        tertiary: '#EEEEEE',
-        link: '#00ADB5',
+        dark: "#111111",
+        light: "#242424",
+        disabled: "#757575",
+        danger: "#CC3040",
       },
       margin: {
-        96: '24rem',
-        128: '32rem',
+        96: "24rem",
+        128: "32rem",
       },
     },
   },
   purge: {
-    layers: ['utilities'],
-    content: ['index.html'],
+    layers: ["utilities"],
+    content: ["index.html"],
   },
   variants: {
-    opacity: ['responsive', 'hover'],
+    opacity: ["responsive", "hover"],
   },
   future: {
     removeDeprecatedGapUtilities: true,
